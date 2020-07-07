@@ -2,7 +2,7 @@
 
 *Self portrait*
 
-My self portrait,pictured below, depicts me next to an empty canvas and a palette with paint on it. I have always loved art and when choosing a major, I decided to pick architecture as I couldn't imagine my life without the creation of art. Although I don't usually have a lot of time to paint, I have recently been able to paint during the summer.
+My self portrait, pictured below, depicts me next to an empty canvas and a palette with paint on it. I have always loved art and when choosing a major, I decided to pick architecture as I couldn't imagine my life without the creation of art. Although I don't usually have a lot of time to paint, I have recently been able to paint during the summer.
 
 ![](SelfPortrait.JPG)
 
