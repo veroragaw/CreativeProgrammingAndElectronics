@@ -14,4 +14,4 @@ While creating my artwork, I began experimenting with the differences between an
 Something interesting I discovered while doing the assignment is that if I don't put the background color under void setup(), the background will be drawn again for every loop. I also discovered how to set the stroke color using the # instead of rgb values. The most valuable discovery was that I would create multiple edits to my lines within one while() loop function.
 
 
-[Generative Artwork](GenerativeArtwork.JPG)
+![Generative Artwork](GenerativeArtwork.JPG)
