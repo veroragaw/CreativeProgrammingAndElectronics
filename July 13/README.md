@@ -1,8 +1,6 @@
 **July 13: Homework**
 
-*Work of Art*
-
-*medium: Loops*
+*Work of Art, medium: Loops*
 
 Describe your inspiration, and include links
 
