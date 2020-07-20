@@ -1,5 +1,5 @@
 import processing.video.*;
-Capture cam;//game over loser
+Capture cam;//game over, loser
 
 import processing.sound.*;
 SoundFile ding;//collision
@@ -21,7 +21,7 @@ int score=0;
 int topscore=0;
 PFont f;
 
-int missCounter=0;
+int missCounter=0;//aww sound counter
 
 void setup() {
   sky=loadImage("C:/Users/veror/OneDrive/Documents/Summer2020/DESINV23/July15/blue-sky.jpg");//background image of a sky
@@ -29,7 +29,7 @@ void setup() {
   ding = new SoundFile(this, "ding.mp3");//sound for collision
   aww = new SoundFile(this, "aww.mp3");//sound for collision
 
-  String[] cameras = Capture.list();
+  String[] cameras = Capture.list();//camera setup
 
   if (cameras == null) {
     println("Failed to retrieve the list of available cameras, will try the default...");
@@ -50,7 +50,7 @@ void setup() {
 void reset() {
   xellipse = width/2;
   yellipse = height/2;
-  xspeed=random(3, 5);
+  xspeed=random(3, 4);
   yspeed=random(3, 5);
   score=0;
   missCounter=0;
@@ -69,7 +69,7 @@ void draw() {
   miss();
 }
 
-void drawEllipse() {
+void drawEllipse() {//circular ball
   fill (#FFFFFF);
   stroke(1);
   ellipse(xellipse, yellipse, radius*2, radius*2);
@@ -81,22 +81,25 @@ void EllipseMovement() {//speed and gravity
   yspeed=yspeed+gravity;
 }
 
-void EllipseBounce() {
-  if (xellipse > width-radius) {//off right side
+void EllipseBounce() {//bouncing off
+  if (xellipse > width-radius) {//the right side
     xspeed=-xspeed;
   }
-  if (xellipse < radius) {//off left side
+  if (xellipse < radius) {//the left side
     xspeed=-xspeed;
   }
-  //if collide with paddle
-  if (yellipse+radius>height-yrect && yellipse+radius<height+yrect && xellipse+radius<mouseX+xrect && xellipse+radius>mouseX-xrect) {
+  if (yellipse < radius) {//the top
+    yspeed=-yspeed;
+  }
+  //the paddle
+  if (xellipse+radius > mouseX && xellipse-radius < mouseX + xrect && yellipse+radius > height-yrect && yellipse+radius < height) {
     yspeed=-yspeed;
     score=score+1;
     ding.play();
   }
 }
 
-void drawPaddle() {
+void drawPaddle() {//rectangular paddle
   stroke(#285272);
   fill(#4685B6);
   rect(mouseX, height-yrect, xrect, yrect);
@@ -110,21 +113,21 @@ void score() {//update the score
 }
 
 void miss() {
-  if (xellipse>width||xellipse<0||yellipse>height||yellipse<0) {
+  if (yellipse>height) {//don't bounce off bottom
     aww.play();
     cam.start();
     if (cam.available() == true) {//show player's face
       cam.read();
     }
     image(cam, 0, 0, width, height);
-    
-    missCounter=missCounter+1;
+
+    missCounter=missCounter+1;//timer for aww sound
     f=createFont("mono", 50);
     textFont(f);
     fill(255);
     text("You LOSE", 130, 100);
 
-    f=createFont("mono", 20);
+    f=createFont("mono", 20);//top score
     textFont(f);
     fill(255);
     text("Top Score:"+ topscore, width/2-70, height/2-120);
@@ -136,11 +139,11 @@ void miss() {
       fill(255);
       text("New Top Score!", width/2-80, height/2-200);
     }
-    if (missCounter>=10) {
+    if (missCounter>=10) {//seconds until aww sound stops
       aww.stop();
     }
   }
 }
-void mousePressed() {
+void mousePressed() {//restart game
   reset();
 }
