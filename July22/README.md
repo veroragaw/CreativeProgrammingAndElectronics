@@ -14,3 +14,4 @@ I had issues with the light sensor but then realized it was because I hadden't a
 Below are an image and a video that demonstrate how this works.
 
 ![](Circuit1.jpg)
+![](Circuit1.mp4)
