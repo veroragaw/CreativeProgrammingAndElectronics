@@ -14,7 +14,7 @@ Here is a schematic demonstrating how the instrument works.
 
 ![](Schematic2.jpg)
 
-Here is a [link](Circuit1.mp4) to a short video of the instrument being played.
+Here is a [link](Circuit2.mp4) to a short video of the instrument being played.
 
 Here is a photograph of the instrument.
 
