@@ -10,11 +10,11 @@ I wanted to incorporate the switch in order to restart the game but since it doe
 
 When attepting to connect the sensors in arduino to processing, I initially didn't get any values in the Serial Monitor. However, I closed all my tabs and rewired the arduino to the breadboard and when I reopened processing and arduino and ran them, I had no issues.
 
-Here is a schematic demonstrating how the instrument works.
+Here is a schematic demonstrating how the circuit works.
 
 ![](Schematic3.jpg)
 
-Here is a photograph of the instrument.
+Here is a photograph of the circuit.
 
 ![](Circuit3.jpg)
 
