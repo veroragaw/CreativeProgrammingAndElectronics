@@ -23,7 +23,8 @@ In short, I have:
 
 3.Programmed the servo motor to turn on a light switch using a button
 
-I still need to
+
+I still need to:
 
 1.Programm the servo motor to turn off a light switch using a sound sensor that detects two claps and a photo resistor that detects darkness
 
