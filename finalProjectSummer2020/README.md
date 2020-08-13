@@ -18,11 +18,14 @@ result in enough force to turn the switch on or off.
 
 [Link](https://youtu.be/7163UvRmcfg) to the video presenting my project
 
+
 ![Schematic](FinalSchematic.jpg)
 
 
 ![Photograph of the project](TheProject.jpg)
 
+
 ![Closeup1](Closeup1.jpg)
+
 
 ![Closeup2](Closeup2.jpg)
