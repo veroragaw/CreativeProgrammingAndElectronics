@@ -1,6 +1,6 @@
 **July 20: Midterm**
 
-*Paddle Ball Game Pt2
+*Paddle Ball Game Pt2*
 
 For the midterm, I updated my previous game, the Paddle Ball Game, to include audio and video. I also fixed some of the code, added text, and allowed the game to be restarted with the push of a button.
 
